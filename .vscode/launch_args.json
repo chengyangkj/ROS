@@ -1,0 +1,8 @@
+{
+	"remoteArgs": {
+		"host": "chengyangkj-4wd-master",
+		"user": "chengyangkj",
+		"keyfile": "/home/chengyangkj/.ssh/id_rsa",
+		"cwd": "/home/chengyangkj/catkin_ws"
+	}
+}

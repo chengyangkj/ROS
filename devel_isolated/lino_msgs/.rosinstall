@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/chengyangkj/catkin_ws/devel_isolated/lino_msgs/setup.sh

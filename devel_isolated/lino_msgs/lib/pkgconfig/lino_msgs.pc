@@ -1,0 +1,8 @@
+prefix=/home/chengyangkj/catkin_ws/devel_isolated/lino_msgs
+
+Name: lino_msgs
+Description: Description of lino_msgs
+Version: 0.0.1
+Cflags: -I/home/chengyangkj/catkin_ws/devel_isolated/lino_msgs/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs geometry_msgs

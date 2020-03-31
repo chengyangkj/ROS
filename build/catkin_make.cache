@@ -1,0 +1,2 @@
+lino_msgs:lino_pid:lino_udev:lino_visualize:linorobot:robotmodel:ros-simple-follower/simple_follower:ydlidar
+-DCATKIN_DEVEL_PREFIX=/home/chengyangkj/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/chengyangkj/catkin_ws/install -G Unix Makefiles

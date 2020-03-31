@@ -1,0 +1,2 @@
+lino_msgs:lino_pid:lino_udev:lino_visualize:linorobot:main
+-DCMAKE_BUILD_TYPE=Debug -G Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/chengyangkj/catkin_ws/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/chengyangkj/catkin_ws/install_isolated

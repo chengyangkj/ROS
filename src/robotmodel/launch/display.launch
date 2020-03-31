@@ -1,0 +1,30 @@
+<launch>
+  <arg
+    name="model" />
+  <arg
+    name="gui"
+    default="False" />
+  <param
+    name="robot_description"
+    textfile="$(find robotmodel)/urdf/robotmodel.urdf" />
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+  <node
+    name="joint_state_publisher"
+    pkg="joint_state_publisher"
+    type="joint_state_publisher" />
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="state_publisher" />
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find robotmodel)/urdf.rviz" />
+    <node pkg="tf2_ros" type="static_transform_publisher" name="link1_to_base_link" args="0.1 0.08 0.04 0 0 0  /link1 /base_link"/>
+        <node pkg="tf2_ros" type="static_transform_publisher" name="link2_to_base_link" args="0.1 -0.08 0.04 0 0 0  /link1 /base_link"/>
+            <node pkg="tf2_ros" type="static_transform_publisher" name="link3_to_base_link" args="-0.1 0.08 0.04 0 0 0  /link1 /base_link"/>
+                <node pkg="tf2_ros" type="static_transform_publisher" name="link4_to_base_link" args="-0.1 -0.08 0.04 0 0 0  /link1 /base_link"/>
+</launch>
